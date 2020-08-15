@@ -4,7 +4,8 @@
   対話型の設定セッションにより``package.json``の作成
 - 作成 : .gitignore (node
 )
-- $ yarn add typescript -g
+- $ yarn add typescript -g  
+  [yarn add](https://classic.yarnpkg.com/ja/docs/cli/add) : 依存関係の追加とパッケージのインストール
 - $ yarn add express cors mongoose
 - $ yarn add -D @types/node @types/express @types/mongoose @types/cors
 - $ yarn add -D concurrently nodemon
