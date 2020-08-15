@@ -12,3 +12,5 @@
 - $ tsc --init (tsconfig.jsonの作成)
 - 修正 : tsconfig.json [(commit)]()
 - 修正 : package.json [(commit)]()
+- 作成 : src/types/todo.ts [(commit)]()  
+  'mongoose'の``Document``型を拡張した``Todoインターフェース``を準備
