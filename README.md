@@ -9,3 +9,10 @@
 - $ yarn add express cors mongoose
 - $ yarn add -D @types/node @types/express @types/mongoose @types/cors
 - $ yarn add -D concurrently nodemon
+- $ tsc --init (tsconfig.jsonの作成)
+- 修正 : tsconfig.json [(commit)]()
+- 修正 : package.json [(commit)]()
+- 作成 : src/types/todo.ts [(commit)]()  
+  'mongoose'の``Document``型を拡張した``Todoインターフェース``を準備
+- 作成 : src/models/todo.ts
+  ``Todoモデル``のmongoスキーマ定義
