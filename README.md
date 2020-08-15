@@ -4,3 +4,4 @@
 - 作成 : .gitignore (node
 )
 - $ yarn add typescript -g
+- $ yarn add express cors mongoose
