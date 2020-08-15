@@ -14,3 +14,5 @@
 - 修正 : package.json [(commit)]()
 - 作成 : src/types/todo.ts [(commit)]()  
   'mongoose'の``Document``型を拡張した``Todoインターフェース``を準備
+- 作成 : src/models/todo.ts
+  ``Todoモデル``のmongoスキーマ定義
