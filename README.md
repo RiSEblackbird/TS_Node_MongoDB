@@ -32,3 +32,6 @@
 ### [APIルートの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-api-routes)
 - 作成 : src/routes/index.ts  
   ルーティングの設定[(ルーティング - Express)](http://expressjs.com/ja/guide/routing.html)
+### [サーバーの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-a-server)
+- 作成 : src/routes/index.ts
+  MongoDBのDB設定を保持するための記述
