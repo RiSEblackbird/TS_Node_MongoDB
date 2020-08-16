@@ -25,4 +25,5 @@
 　　　備考(doc) : [req](http://expressjs.com/ja/api.html#req), [res](http://expressjs.com/ja/api.html#res)  
 　Create : addTodo : 入力データをbodyオブジェクトで受け取り、Todoを作成  
 　　　備考(doc) : [await](https://typescript-jp.gitbook.io/deep-dive/future-javascript/async-await)
-　Update : updateTodo : 
+　Update : updateTodo : Todoの更新
+　　　備考(doc) : [Model.findByIdAndUpdate()](https://mongoosejs.com/docs/api.html#model_Model.findByIdAndUpdate)
