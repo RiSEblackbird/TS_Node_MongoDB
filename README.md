@@ -20,7 +20,7 @@
 - 作成 : src/models/todo.ts [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/df005a75343738800194ba0a422864d471207f11)  
   ``Todoモデル``のmongoスキーマ定義
 ### APIコントローラーの作成
-- 作成 : src/controllers/todos/index.ts [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/8a37c7f873b97c9dbbd43f64b91ad8e1b6be6b2e)  
+- 作成 : src/controllers/todos/index.ts [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/db2515936100db42a2c6a0930e09e3d3a7c6b917)  
 　Read : getTodos : データの取得やレスポンス(200)の定義  
 　　　備考(doc) : [req](http://expressjs.com/ja/api.html#req), [res](http://expressjs.com/ja/api.html#res)  
 　Create : addTodo : 入力データをbodyオブジェクトで受け取り、Todoを作成  
