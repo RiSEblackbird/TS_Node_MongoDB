@@ -15,9 +15,14 @@
 - 修正 : package.json [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/e6d56691d47c3821de4abb2e5e023c8ba76aeca6)
 ### Todoに関する定義
 - 作成 : src/types/todo.ts [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/45c69c2aaad6bb5637bbaf148093881966821ff9)  
-  'mongoose'の``Document``型を拡張した``Todoインターフェース``を準備
+  'mongoose'の``Document``型を拡張した``Todoインターフェース``を準備  
+　　　備考(doc) : [Interfaces](https://typescript-jp.gitbook.io/deep-dive/type-system/interfaces), [extends(- MDN JS)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Classes/extends)
 - 作成 : src/models/todo.ts [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/df005a75343738800194ba0a422864d471207f11)  
   ``Todoモデル``のmongoスキーマ定義
 ### APIコントローラーの作成
 - 作成 : src/controllers/todos/index.ts [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/8a37c7f873b97c9dbbd43f64b91ad8e1b6be6b2e)  
-  データの取得やレスポンスの定義
+　Read : getTodos : データの取得やレスポンス(200)の定義  
+　　　備考(doc) : [req](http://expressjs.com/ja/api.html#req), [res](http://expressjs.com/ja/api.html#res)  
+　Create : addTodo : 入力データをbodyオブジェクトで受け取り、Todoを作成  
+　　　備考(doc) : [await](https://typescript-jp.gitbook.io/deep-dive/future-javascript/async-await)
+　Update : updateTodo : 
