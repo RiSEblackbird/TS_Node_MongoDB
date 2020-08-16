@@ -29,3 +29,6 @@
 　　　備考(doc) : [Model.findByIdAndUpdate()](https://mongoosejs.com/docs/api.html#model_Model.findByIdAndUpdate)  
 　Delete : deleteTodo : Todoの削除  
 　　　備考(doc) : [Model.findOneAndRemove()](https://mongoosejs.com/docs/api.html#model_Model.findOneAndRemove)  
+### [APIルートの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-api-routes)
+- 作成 : src/routes/index.ts  
+  ルーティングの設定[(ルーティング - Express)](http://expressjs.com/ja/guide/routing.html)
