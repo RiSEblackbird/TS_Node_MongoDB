@@ -19,4 +19,5 @@
 - 作成 : src/models/todo.ts [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/df005a75343738800194ba0a422864d471207f11)  
   ``Todoモデル``のmongoスキーマ定義
 ### APIコントローラーの作成
-- 作成 : src/controllers/todos/index.ts [(commit)]()
+- 作成 : src/controllers/todos/index.ts [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/8a37c7f873b97c9dbbd43f64b91ad8e1b6be6b2e)  
+  データの取得やレスポンスの定義
