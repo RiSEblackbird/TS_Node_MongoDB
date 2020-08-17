@@ -35,3 +35,7 @@
 ### [サーバーの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-a-server)
 - 作成 : src/routes/index.ts
   MongoDBのDB設定を保持するための記述
+- 作成 : src/app.ts  
+  MongoDBとの接続  
+　　　備考(doc) : [(cors - npm)](https://www.npmjs.com/package/cors), [(cors - MDN)](https://developer.mozilla.org/ja/docs/Glossary/CORS)  
+　　　[app.use()](https://expressjs.com/en/guide/using-middleware.html#middleware.application) : アプリケーションレベルのミドルウェアをアプリオブジェクトのインスタンスにバインドするためのメソッド
