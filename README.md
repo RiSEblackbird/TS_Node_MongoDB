@@ -50,4 +50,4 @@
 - ターミナル移動 : ``./client``
 - $ yarn add axios  
 　　　備考(doc) : [axios - npm](https://www.npmjs.com/package/axios), [【Ajax】axiosを使って簡単にHTTP通信 | Will Style Inc.｜神戸にあるウェブ制作会社](https://www.willstyle.co.jp/blog/2751/)
-- 
+- 作成 : src/type.d.ts
