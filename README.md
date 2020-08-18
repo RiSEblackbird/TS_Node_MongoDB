@@ -2,6 +2,8 @@
 
 ## API routes, Model, Controller, MongoDB
 ### [準備設定](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#getting-set-up)
+- $ mkdir server
+  - 以下``./server``ディレクトリで操作(ターミナル)
 - $ yarn init [(doc)](https://classic.yarnpkg.com/ja/docs/cli/init/#toc-yarn-init)  
   対話型の設定セッションにより``package.json``の作成
 - 作成 : .gitignore (node
@@ -42,5 +44,6 @@
 　　　[app.use()](https://expressjs.com/en/guide/using-middleware.html#middleware.application) : アプリケーションレベルのミドルウェアをアプリオブジェクトのインスタンスにバインドするためのメソッド
 ## [Client-side with React](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#client-side-with-react-and-typescript)
 ### 準備設定
-- $ npx create-react-app my-app --template typescript
+- ターミナル移動``root``
+- $ npx create-react-app client --template typescript
 　　　備考(doc) : [新しい React アプリを作る – React](https://ja.reactjs.org/docs/create-a-new-react-app.html), [Selecting a template](https://create-react-app.dev/docs/getting-started#selecting-a-template)
