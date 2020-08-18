@@ -44,7 +44,10 @@
 　　　[app.use()](https://expressjs.com/en/guide/using-middleware.html#middleware.application) : アプリケーションレベルのミドルウェアをアプリオブジェクトのインスタンスにバインドするためのメソッド
 ## [Client-side with React](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#client-side-with-react-and-typescript)
 ### 準備設定
-- ターミナル移動 : ``root``
-- $ npx create-react-app client --template typescript
+- ターミナル移動 : ``root``  
+- $ npx create-react-app client --template typescript  
 　　　備考(doc) : [新しい React アプリを作る – React](https://ja.reactjs.org/docs/create-a-new-react-app.html), [Selecting a template](https://create-react-app.dev/docs/getting-started#selecting-a-template)
 - ターミナル移動 : ``./client``
+- $ yarn add axios  
+　　　備考(doc) : [axios - npm](https://www.npmjs.com/package/axios), [【Ajax】axiosを使って簡単にHTTP通信 | Will Style Inc.｜神戸にあるウェブ制作会社](https://www.willstyle.co.jp/blog/2751/)
+- 
