@@ -57,3 +57,8 @@
 　　``addTodos()`` : ユーザーが入力したデータを引数として受け取り、プロミスを返す  
 　　``updateTodo()`` : Todoを更新するために、更新されたデータとオブジェクトの``_id``を渡す  
 　　``deleteTodo()`` : Todoの削除
+## [Create the components](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-the-components)
+- $ mkdir src/components
+- 作成 : ``./client/src/components/AddTodo.tsx`` 
+　Todoの操作フォーム
+　　　備考(doc) : [レンダープロップ – React](https://ja.reactjs.org/docs/render-props.html), [コンポーネントと props – React](https://ja.reactjs.org/docs/components-and-props.html)
