@@ -72,3 +72,5 @@
 - 作成 : ``./client/src/components/TodoItem.tsx`` 
 　Todoの操作フォーム  
 　　　備考(doc) : [[レンダープロップ – React]](https://ja.reactjs.org/docs/render-props.html), [[コンポーネントと props – React]](https://ja.reactjs.org/docs/components-and-props.html)
+- 編集 : ``./client/src/App.tsx``  
+  - 編集1
