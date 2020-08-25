@@ -74,5 +74,5 @@
 　Todoの操作フォーム  
 　　　備考(doc) : [[レンダープロップ – React]](https://ja.reactjs.org/docs/render-props.html), [[コンポーネントと props – React]](https://ja.reactjs.org/docs/components-and-props.html)
 - 編集 : ``./client/src/App.tsx``  
-  - [編集1]() : 各インポート -> Reactとそのフック、コンポーネント、APIのCRUD用メソッド (フックについては別途よく調べる)
+  - [編集1]() : 各インポート -> Reactとそのフック、コンポーネント、APIのCRUD用メソッド (フックについては別途よく調べる)  
   　　　備考(doc) : [useEffect - React](https://ja.reactjs.org/docs/hooks-reference.html#useeffect), [副作用フックの利用法 – React](https://ja.reactjs.org/docs/hooks-effect.html)
