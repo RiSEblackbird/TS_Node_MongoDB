@@ -64,8 +64,9 @@
 　Todoの投稿フォーム  
 　JS/Reactの基本事項  
 　　[``useState``](https://ja.reactjs.org/docs/hooks-reference.html#usestate) : 現在の state の値と、それを更新するための関数とをペアにして返す  
+　　[``スプレッド構文(...) - MDN``](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/Spread_syntax) : 配列要素を複製する  
 　　``interface FormEvent`` : ``SyntheticEvent<T>``を継承  
-　　　[合成イベント (SyntheticEvent) – React](https://ja.reactjs.org/docs/events.html)
+　　　[合成イベント (SyntheticEvent) – React](https://ja.reactjs.org/docs/events.html)  
 　　[``onChange``](https://ja.reactjs.org/docs/dom-elements.html#onchange) : フォームコントロールの値の変更を検知(changeイベント)  
 　　[``className``](https://ja.reactjs.org/docs/dom-elements.html#classname) : CSSクラスの指定  
 　　　備考(doc) : [[フック早わかり – React]](https://ja.reactjs.org/docs/hooks-overview.html#state-hook), [[GlobalEventHandlers.onchange - Web API | MDN]](https://developer.mozilla.org/ja/docs/Web/API/GlobalEventHandlers/onchange), [[フォーム – React]](https://ja.reactjs.org/docs/forms.html), [[DOM 要素 – React]](https://ja.reactjs.org/docs/dom-elements.html)
@@ -73,4 +74,4 @@
 　Todoの操作フォーム  
 　　　備考(doc) : [[レンダープロップ – React]](https://ja.reactjs.org/docs/render-props.html), [[コンポーネントと props – React]](https://ja.reactjs.org/docs/components-and-props.html)
 - 編集 : ``./client/src/App.tsx``  
-  - 編集1
+  - [編集1]() : 各インポート -> Reactとそのフック、コンポーネント、APIのCRUD用メソッド (フックについては別途よく調べる)
