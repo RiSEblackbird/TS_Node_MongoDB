@@ -89,3 +89,4 @@
   - [編集1]() : 各インポート -> Reactとそのフック、コンポーネント、APIのCRUD用メソッド (フックについては別途よく調べる)  
   　　　備考(doc) : [[useEffect - React]](https://ja.reactjs.org/docs/hooks-reference.html#useeffect), [[副作用フックの利用法 – React]](https://ja.reactjs.org/docs/hooks-effect.html)
   - [編集2]() : ``handleSaveTodo`` : ``addTodo()``でAxiosが'201'ステータスを返した場合にエラーを表示する
+  - [編集3]() : 上記同様、更新と削除
