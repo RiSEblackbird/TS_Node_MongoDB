@@ -1,4 +1,16 @@
-# 参照先 : [How to Build a Todo App with React, TypeScript, NodeJS, and MongoDB](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/)
+# [How to Build a Todo App with React, TypeScript, NodeJS, and MongoDB](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/)  (こちらのチュートリアルを参照させていただきました)
+
+## 全体像理解のために重要なリファレンス
+### JavaScript
+- [extends(- MDN JS)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Classes/extends)
+  - ``class ChildClass extends ParentClass { ... }``
+  - [意]：``ChildClassクラス``は``ParentClassクラス``を``継承``している
+### TypeScript固有
+### Express
+### React
+- [Promiseを使う - JavaScript | MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Using_promises)
+  - 非同期処理の最終的な完了もしくは失敗を表すオブジェクトのこと
+  - ``then()``関数, ``catch()``関数の出元
 
 ## API routes, Model, Controller, MongoDB
 ### [準備設定](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#getting-set-up)
@@ -75,4 +87,5 @@
 　　　備考(doc) : [[レンダープロップ – React]](https://ja.reactjs.org/docs/render-props.html), [[コンポーネントと props – React]](https://ja.reactjs.org/docs/components-and-props.html)
 - 編集 : ``./client/src/App.tsx``  
   - [編集1]() : 各インポート -> Reactとそのフック、コンポーネント、APIのCRUD用メソッド (フックについては別途よく調べる)  
-  　　　備考(doc) : [useEffect - React](https://ja.reactjs.org/docs/hooks-reference.html#useeffect), [副作用フックの利用法 – React](https://ja.reactjs.org/docs/hooks-effect.html)
+  　　　備考(doc) : [[useEffect - React]](https://ja.reactjs.org/docs/hooks-reference.html#useeffect), [[副作用フックの利用法 – React]](https://ja.reactjs.org/docs/hooks-effect.html)
+  - [編集2]() : ``handleSaveTodo`` : ``addTodo()``でAxiosが'201'ステータスを返した場合にエラーを表示する
