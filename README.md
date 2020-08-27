@@ -60,6 +60,7 @@
 ### [サーバーの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-a-server)
 - 作成 : ``./server/src/routes/index.ts``
   MongoDBのDB設定を保持するための記述
+- アプリケーションと接続するMongoDBのクラスターをセッティングする
 - 作成 : ``./server/src/app.ts``  
   MongoDBとの接続  
   　[app.use()](https://expressjs.com/en/guide/using-middleware.html#middleware.application) : アプリケーションレベルのミドルウェアをアプリオブジェクトのインスタンスにバインドするためのメソッド  
