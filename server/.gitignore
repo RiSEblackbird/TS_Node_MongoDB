@@ -116,4 +116,4 @@ out
 .pnp.*
 
 # Mongoの設定
-.nodemon.json
+nodemon.json
