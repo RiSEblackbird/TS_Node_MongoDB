@@ -1,4 +1,5 @@
-# [How to Build a Todo App with React, TypeScript, NodeJS, and MongoDB](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/)  (こちらのチュートリアルを参照させていただきました)
+# [How to Build a Todo App with React, TypeScript, NodeJS, and MongoDB](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/)
+  (こちらのチュートリアルを参照させていただきました)
 
 ## 全体像理解のために重要なリファレンス
 ### JavaScript
@@ -94,3 +95,10 @@
   - [編集2]() : ``handleSaveTodo`` : ``addTodo()``でAxiosが'201'ステータスを返した場合にエラーを表示する
   - [編集3]() : 上記同様、更新と削除
   - [編集4]() : 描画部分
+
+### 起動方法
+- ``server``, ``client``の両方で``$ yarn start``
+
+!!! 現状
+## Errors
+- ``UnhandledPromiseRejectionWarning: MongoError: Authentication failed.``
