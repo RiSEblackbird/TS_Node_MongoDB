@@ -12,7 +12,6 @@ const getTodos = async (req: Request, res: Response): Promise<void> => {
 }
 
 const addTodo = async (req: Request, res: Response): Promise<void> => {
-    const body = req.body as Pick<ITodo, "name" | "description" | "status">
     try {
         const body = req.body as Pick<ITodo, 'name' | 'description' | 'status'>
 
