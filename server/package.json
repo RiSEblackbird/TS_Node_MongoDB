@@ -1,7 +1,7 @@
 {
   "name": "TS_Node_MongoDB",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "index.js",
   "repository": "https://github.com/RiSEblackbird/TS_Node_MongoDB.git",
   "author": "SELA <RiSEblackbird@users.noreply.github.com>",
   "license": "MIT",

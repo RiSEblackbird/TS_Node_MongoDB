@@ -12,6 +12,16 @@
 - [Promiseを使う - JavaScript | MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Using_promises)
   - 非同期処理の最終的な完了もしくは失敗を表すオブジェクトのこと
   - ``then()``関数, ``catch()``関数の出元
+### MongoDB(, mongoose)
+- [Quick Start — Node.js](https://docs.mongodb.com/drivers/node/quick-start#create-a-mongodb-cluster)
+  - Node.jsとの接続のためのチュートリアル
+  - クラスターの建て方が解説されている
+  - 今回のTodoチュートリアルでは、Mongoのインストール後に[[#Create a MongoDB Cluster]](https://docs.mongodb.com/drivers/node/quick-start#create-a-mongodb-cluster)へ続ける
+- [Get Started with Atlas — MongoDB Atlas](https://docs.atlas.mongodb.com/getting-started/)
+  - ``MongoDB Atlas``はMongoDBのマネージドサービス
+  - ``M0``クラスターであれば無料
+- [Connection String URI Format — MongoDB Manual](https://docs.mongodb.com/manual/reference/connection-string/)
+  - ``mongoose.connect()``に渡す``接続文字列``の解説
 
 ## API routes, Model, Controller, MongoDB
 ### [準備設定](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#getting-set-up)
