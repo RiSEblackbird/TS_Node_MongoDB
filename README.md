@@ -53,6 +53,9 @@
   MongoDBとの接続  
   　[app.use()](https://expressjs.com/en/guide/using-middleware.html#middleware.application) : アプリケーションレベルのミドルウェアをアプリオブジェクトのインスタンスにバインドするためのメソッド  
 　　　備考(doc) : [[cors - npm]](https://www.npmjs.com/package/cors), [[cors - MDN]](https://developer.mozilla.org/ja/docs/Glossary/CORS)  
+### JSへのコンパイル
+- $ npx tsx
+  - ``./dist/js``ディレクトリにJavaScriptにコンパイルされたファイルが出力される
 　　　
 ## [Client-side with React](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#client-side-with-react-and-typescript)
 ### 準備設定
