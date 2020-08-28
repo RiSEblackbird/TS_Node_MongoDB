@@ -2,6 +2,7 @@
   (こちらのチュートリアルを参照させていただきました)
 
 ## 全体像理解のために重要なリファレンス
+　(別リポジトリで登場した参照先もこちらに集約していく)
 ### JavaScript
 - [extends(- MDN JS)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Classes/extends)
   - ``class ChildClass extends ParentClass { ... }``
@@ -117,3 +118,48 @@
   - ``MongoDB Atlas``で自身のクラスターをセッティングして、接続文字列を修正したことで解消した
 - ``UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'name' of undefined``
   - フォームからTodoをPostする際に発生
+
+##
+
+### ./client
+
+~~~
+├── node_modules
+├── public
+├── src
+|  ├── API.ts
+|  ├── App.test.tsx
+|  ├── App.tsx
+|  ├── components
+|  |  ├── AddTodo.tsx
+|  |  └── TodoItem.tsx
+|  ├── index.css
+|  ├── index.tsx
+|  ├── react-app-env.d.ts
+|  ├── setupTests.ts
+|  └── type.d.ts
+├── tsconfig.json
+├── package.json
+└── yarn.lock
+~~~
+
+### ./server
+
+~~~
+├── dist
+├── node_modules
+├── src
+   ├── app.ts
+   ├── controllers
+   |  └── todos
+   |     └── index.ts
+   ├── models
+   |  └── todo.ts
+   ├── routes
+   |  └── index.ts
+   └── types
+      └── todo.ts
+├── nodemon.json
+├── package.json
+├── tsconfig.json
+~~~
