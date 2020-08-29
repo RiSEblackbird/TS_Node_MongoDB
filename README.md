@@ -158,9 +158,9 @@ F
 - ``UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'name' of undefined``
   - フォームからTodoをPostする際に発生 <--
 
-### 階層
+## 階層
 
-#### client
+### client
 
 ~~~
 ├── node_modules
@@ -182,7 +182,7 @@ F
 └── yarn.lock
 ~~~
 
-#### server
+### server
 
 ~~~
 ├── dist
