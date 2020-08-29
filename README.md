@@ -30,6 +30,7 @@
   - ``mongoose.connect()``に渡す``接続文字列``の解説
 
 ## [チュートリアル](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/)の工程(適宜補完, 変更)
+- ここではあくまで私自身向けにまとめています。
 ### API routes, Model, Controller, MongoDB
 #### [準備設定](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#getting-set-up)
 - ``$ mkdir server``
