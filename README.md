@@ -1,5 +1,10 @@
-# [How to Build a Todo App with React, TypeScript, NodeJS, and MongoDB](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/)
-  (こちらのチュートリアルを参照させていただきました)
+# _TS_Node_MongoDB
+## リポジトリの目的
+- 表題技術の基礎学習
+- 自分用のリファレンス集の作成
+
+下記のチュートリアルを参照させていただきました。
+  - ***[How to Build a Todo App with React, TypeScript, NodeJS, and MongoDB - freeCodeCamp](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/)***
 
 ## 全体像理解のために重要なリファレンス
 　(別リポジトリで登場した参照先もこちらに集約していく)
@@ -24,8 +29,9 @@
 - [Connection String URI Format — MongoDB Manual](https://docs.mongodb.com/manual/reference/connection-string/)
   - ``mongoose.connect()``に渡す``接続文字列``の解説
 
-## API routes, Model, Controller, MongoDB
-### [準備設定](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#getting-set-up)
+## [チュートリアル](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/)の工程(適宜補完, 変更)
+### API routes, Model, Controller, MongoDB
+#### [準備設定](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#getting-set-up)
 - ``$ mkdir server``
 - ターミナル移動 : ``./server``
 - ``$ yarn init`` [(doc)](https://classic.yarnpkg.com/ja/docs/cli/init/#toc-yarn-init)  
@@ -39,13 +45,13 @@
 - ``$ tsc --init`` (tsconfig.jsonの作成)
 - 修正 : ``./server/tsconfig.json`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/94b787c19102c441b156b18b8f303e23584149b7)
 - 修正 : ``./server/package.json`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/e6d56691d47c3821de4abb2e5e023c8ba76aeca6)
-### [Todoに関する定義](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-a-todo-type)
+#### [Todoに関する定義](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-a-todo-type)
 - 作成 : ``./server/src/types/todo.ts`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/45c69c2aaad6bb5637bbaf148093881966821ff9)  
   ``mongoose``の``Document``型を拡張した``Todoインターフェース``を準備  
 　　　備考(doc) : [[Interfaces]](https://typescript-jp.gitbook.io/deep-dive/type-system/interfaces), [[extends(- MDN JS)]](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Classes/extends)
 - 作成 : ``./server/src/models/todo.ts`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/df005a75343738800194ba0a422864d471207f11)  
   ``Todoモデル``のmongoスキーマ定義
-### [APIコントローラーの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-api-controllers)
+#### [APIコントローラーの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-api-controllers)
 - 作成 : ``src/controllers/todos/index.ts`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/db2515936100db42a2c6a0930e09e3d3a7c6b917)  
 　Read : ``getTodos`` : データの取得やレスポンス(200)の定義  
 　　　備考(doc) : [[req]](http://expressjs.com/ja/api.html#req), [[res]](http://expressjs.com/ja/api.html#res)  
@@ -55,10 +61,10 @@
 　　　備考(doc) : [[Model.findByIdAndUpdate()]](https://mongoosejs.com/docs/api.html#model_Model.findByIdAndUpdate)  
 　Delete : ``deleteTodo`` : Todoの削除  
 　　　備考(doc) : [[Model.findOneAndRemove()]](https://mongoosejs.com/docs/api.html#model_Model.findOneAndRemove)  
-### [APIルートの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-api-routes)
+#### [APIルートの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-api-routes)
 - 作成 : ``./server/src/routes/index.ts``  
   ルーティングの設定[(ルーティング - Express)](http://expressjs.com/ja/guide/routing.html)
-### [サーバーの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-a-server)
+#### [サーバーの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-a-server)
 - 作成 : ``./server/src/routes/index.ts``
   MongoDBのDB設定を保持するための記述
 - アプリケーションと接続するMongoDBのクラスターをセッティングする
@@ -66,12 +72,12 @@
   MongoDBとの接続  
   　[app.use()](https://expressjs.com/en/guide/using-middleware.html#middleware.application) : アプリケーションレベルのミドルウェアをアプリオブジェクトのインスタンスにバインドするためのメソッド  
 　　　備考(doc) : [[cors - npm]](https://www.npmjs.com/package/cors), [[cors - MDN]](https://developer.mozilla.org/ja/docs/Glossary/CORS)  
-### JSへのコンパイル
+#### JSへのコンパイル
 - $ npx tsc
   - ``./dist``ディレクトリにJavaScriptにコンパイルされたファイルが出力される
 　　　
-## [Client-side with React](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#client-side-with-react-and-typescript)
-### 準備設定
+### [Client-side with React](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#client-side-with-react-and-typescript)
+#### 準備設定
 - ターミナル移動 : ``root``  
 - ``$ npx create-react-app client --template typescript``  
 　　　備考(doc) : [[新しい React アプリを作る – React]](https://ja.reactjs.org/docs/create-a-new-react-app.html), [[Selecting a template]](https://create-react-app.dev/docs/getting-started#selecting-a-template)
@@ -86,7 +92,7 @@
 　　``addTodos()`` : ユーザーが入力したデータを引数として受け取り、プロミスを返す  
 　　``updateTodo()`` : Todoを更新するために、更新されたデータとオブジェクトの``_id``を渡す  
 　　``deleteTodo()`` : Todoの削除
-## [Create the components](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-the-components)
+### [Create the components](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-the-components)
 - $ mkdir src/components
 - 作成 : ``./client/src/components/AddTodo.tsx``  
 　Todoの投稿フォーム  
@@ -108,20 +114,20 @@
   - [編集3]() : 上記同様、更新と削除
   - [編集4]() : 描画部分
 
-### 起動方法
+#### 起動方法
 - ``server``, ``client``の両方で``$ yarn start``
 
 !!! 現状
-## Errors
+### Errors
 - ``UnhandledPromiseRejectionWarning: MongoError: Authentication failed.``
   - ``app.ts``の接続文字列の設定方法を知らず、チュートリアル著者の設定を引用していたため発生
   - ``MongoDB Atlas``で自身のクラスターをセッティングして、接続文字列を修正したことで解消した
 - ``UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'name' of undefined``
   - フォームからTodoをPostする際に発生
 
-##
+###
 
-### ./client
+#### ./client
 
 ~~~
 ├── node_modules
@@ -143,7 +149,7 @@
 └── yarn.lock
 ~~~
 
-### ./server
+#### ./server
 
 ~~~
 ├── dist
