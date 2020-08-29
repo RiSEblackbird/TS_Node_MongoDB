@@ -117,15 +117,14 @@
 #### 起動方法
 - ``server``, ``client``の両方で``$ yarn start``
 
-!!! 現状
 ### Errors
 - ``UnhandledPromiseRejectionWarning: MongoError: Authentication failed.``
   - ``app.ts``の接続文字列の設定方法を知らず、チュートリアル著者の設定を引用していたため発生
   - ``MongoDB Atlas``で自身のクラスターをセッティングして、接続文字列を修正したことで解消した
 - ``UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'name' of undefined``
-  - フォームからTodoをPostする際に発生
+  - フォームからTodoをPostする際に発生 <--
 
-###
+### 階層
 
 #### ./client
 
