@@ -47,29 +47,29 @@
 - ここではあくまで私自身向けにまとめています。
 
 ### API routes, Model, Controller, MongoDB
-
+F
 #### [準備設定](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#getting-set-up)
 
 - ``$ mkdir server``
-- ターミナル移動 : ``./server``
+- ターミナル移動 : ``server``
 - ``$ yarn init`` [(doc)](https://classic.yarnpkg.com/ja/docs/cli/init/#toc-yarn-init)  
   対話型の設定セッションにより``package.json``の作成
-- 作成 : ``./server/.gitignore`` (node)
+- 作成 : ``server/.gitignore`` (node)
 - ``$ yarn add typescript -g``  
   [yarn add](https://classic.yarnpkg.com/ja/docs/cli/add) : 依存関係の追加とパッケージのインストール
 - ``$ yarn add express cors mongoose``
 - ``$ yarn add -D @types/node @types/express @types/mongoose @types/cors``
 - ``$ yarn add -D concurrently nodemon``
 - ``$ tsc --init`` (tsconfig.jsonの作成)
-- 修正 : ``./server/tsconfig.json`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/94b787c19102c441b156b18b8f303e23584149b7)
-- 修正 : ``./server/package.json`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/e6d56691d47c3821de4abb2e5e023c8ba76aeca6)
+- 修正 : ``server/tsconfig.json`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/94b787c19102c441b156b18b8f303e23584149b7)
+- 修正 : ``server/package.json`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/e6d56691d47c3821de4abb2e5e023c8ba76aeca6)
 
 #### [Todoに関する定義](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-a-todo-type)
 
-- 作成 : ``./server/src/types/todo.ts`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/45c69c2aaad6bb5637bbaf148093881966821ff9)  
+- 作成 : ``server/src/types/todo.ts`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/45c69c2aaad6bb5637bbaf148093881966821ff9)  
   ``mongoose``の``Document``型を拡張した``Todoインターフェース``を準備  
 　　　備考(doc) : [[Interfaces]](https://typescript-jp.gitbook.io/deep-dive/type-system/interfaces), [[extends(- MDN JS)]](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Classes/extends)
-- 作成 : ``./server/src/models/todo.ts`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/df005a75343738800194ba0a422864d471207f11)  
+- 作成 : ``server/src/models/todo.ts`` [(commit)](https://github.com/RiSEblackbird/TS_Node_MongoDB/commit/df005a75343738800194ba0a422864d471207f11)  
   ``Todoモデル``のmongoスキーマ定義
 
 #### [APIコントローラーの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-api-controllers)
@@ -86,15 +86,15 @@
 
 #### [APIルートの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-api-routes)
 
-- 作成 : ``./server/src/routes/index.ts``  
+- 作成 : ``server/src/routes/index.ts``  
   ルーティングの設定[(ルーティング - Express)](http://expressjs.com/ja/guide/routing.html)
 
 #### [サーバーの作成](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-a-server)
 
-- 作成 : ``./server/src/routes/index.ts``
+- 作成 : ``server/src/routes/index.ts``
   MongoDBのDB設定を保持するための記述
 - アプリケーションと接続するMongoDBのクラスターをセッティングする
-- 作成 : ``./server/src/app.ts``  
+- 作成 : ``server/src/app.ts``  
   MongoDBとの接続  
   　[app.use()](https://expressjs.com/en/guide/using-middleware.html#middleware.application) : アプリケーションレベルのミドルウェアをアプリオブジェクトのインスタンスにバインドするためのメソッド  
 　　　備考(doc) : [[cors - npm]](https://www.npmjs.com/package/cors), [[cors - MDN]](https://developer.mozilla.org/ja/docs/Glossary/CORS)  
@@ -102,7 +102,7 @@
 #### JSへのコンパイル
 
 - $ npx tsc
-  - ``./dist``ディレクトリにJavaScriptにコンパイルされたファイルが出力される
+  - ``dist``ディレクトリにJavaScriptにコンパイルされたファイルが出力される
 　　　
 ### [Client-side with React](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#client-side-with-react-and-typescript)
 
@@ -111,12 +111,12 @@
 - ターミナル移動 : ``root``  
 - ``$ npx create-react-app client --template typescript``  
 　　　備考(doc) : [[新しい React アプリを作る – React]](https://ja.reactjs.org/docs/create-a-new-react-app.html), [[Selecting a template]](https://create-react-app.dev/docs/getting-started#selecting-a-template)
-- ターミナル移動 : ``./client``
+- ターミナル移動 : ``client``
 - ``$ yarn add axios``  
 　　　備考(doc) : [[axios - npm]](https://www.npmjs.com/package/axios), [[【Ajax】axiosを使って簡単にHTTP通信 | Will Style Inc.｜神戸にあるウェブ制作会社]](https://www.willstyle.co.jp/blog/2751/)
-- 作成 : ``./client/src/type.d.ts``  
+- 作成 : ``client/src/type.d.ts``  
 　　　備考(doc) : [[TypeScript: Handbook - Modules .d.ts]](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-d-ts.html)
-- 作成 : ``./client/src/API.ts``  
+- 作成 : ``client/src/API.ts``  
 　``axios``のメソッドを含みHTTPメソッドを実行する  
 　　``getTodos()`` : サーバーからデータを取得する  
 　　``addTodos()`` : ユーザーが入力したデータを引数として受け取り、プロミスを返す  
@@ -126,7 +126,7 @@
 ### [Create the components](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#create-the-components)
 
 - $ mkdir src/components
-- 作成 : ``./client/src/components/AddTodo.tsx``  
+- 作成 : ``client/src/components/AddTodo.tsx``  
 　Todoの投稿フォーム  
 　JS/Reactの基本事項  
 　　[``useState``](https://ja.reactjs.org/docs/hooks-reference.html#usestate) : 現在の state の値と、それを更新するための関数とをペアにして返す  
@@ -136,10 +136,10 @@
 　　[``onChange``](https://ja.reactjs.org/docs/dom-elements.html#onchange) : フォームコントロールの値の変更を検知(changeイベント)  
 　　[``className``](https://ja.reactjs.org/docs/dom-elements.html#classname) : CSSクラスの指定  
 　　　備考(doc) : [[フック早わかり – React]](https://ja.reactjs.org/docs/hooks-overview.html#state-hook), [[GlobalEventHandlers.onchange - Web API | MDN]](https://developer.mozilla.org/ja/docs/Web/API/GlobalEventHandlers/onchange), [[フォーム – React]](https://ja.reactjs.org/docs/forms.html), [[DOM 要素 – React]](https://ja.reactjs.org/docs/dom-elements.html)
-- 作成 : ``./client/src/components/TodoItem.tsx`` 
+- 作成 : ``client/src/components/TodoItem.tsx`` 
 　Todoの操作フォーム  
 　　　備考(doc) : [[レンダープロップ – React]](https://ja.reactjs.org/docs/render-props.html), [[コンポーネントと props – React]](https://ja.reactjs.org/docs/components-and-props.html)
-- 編集 : ``./client/src/App.tsx``  
+- 編集 : ``client/src/App.tsx``  
   - [編集1]() : 各インポート -> Reactとそのフック、コンポーネント、APIのCRUD用メソッド (フックについては別途よく調べる)  
   　　　備考(doc) : [[useEffect - React]](https://ja.reactjs.org/docs/hooks-reference.html#useeffect), [[副作用フックの利用法 – React]](https://ja.reactjs.org/docs/hooks-effect.html)
   - [編集2]() : ``handleSaveTodo`` : ``addTodo()``でAxiosが'201'ステータスを返した場合にエラーを表示する
@@ -160,7 +160,7 @@
 
 ### 階層
 
-#### ./client
+#### client
 
 ~~~
 ├── node_modules
@@ -182,7 +182,7 @@
 └── yarn.lock
 ~~~
 
-#### ./server
+#### server
 
 ~~~
 ├── dist
