@@ -47,7 +47,7 @@
 - ここではあくまで私自身向けにまとめています。
 
 ### API routes, Model, Controller, MongoDB
-F
+
 #### [準備設定](https://www.freecodecamp.org/news/how-to-build-a-todo-app-with-react-typescript-nodejs-and-mongodb/#getting-set-up)
 
 - ``$ mkdir server``
