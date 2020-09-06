@@ -1,5 +1,8 @@
 # _TS_Node_MongoDB
 
+(This repository is my own self-study document
+)
+
 ## リポジトリの目的
 
 - 表題技術の基礎学習
@@ -16,9 +19,11 @@
 ### JavaScript
 
 - [extends(- MDN JS)](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Classes/extends)
-
   - ``class ChildClass extends ParentClass { ... }``
   - [意]：``ChildClassクラス``は``ParentClassクラス``を``継承``している
+- [Promiseを使う - JavaScript | MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Using_promises)
+  - 非同期処理の最終的な完了もしくは失敗を表すオブジェクトのこと
+  - ``then()``関数, ``catch()``関数の出元
 
 ### TypeScript固有
 
@@ -26,9 +31,7 @@
 
 ### React
 
-- [Promiseを使う - JavaScript | MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Using_promises)
-  - 非同期処理の最終的な完了もしくは失敗を表すオブジェクトのこと
-  - ``then()``関数, ``catch()``関数の出元
+- [React Hooks の基本的な使い方 / Web Design Leaves](https://www.webdesignleaves.com/pr/jquery/react_basic_04.html)
 
 ### MongoDB(, mongoose)
 
